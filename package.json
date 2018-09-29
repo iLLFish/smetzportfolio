@@ -1,0 +1,44 @@
+{
+  "name": "sascha-metz-homepage",
+  "version": "1.0.0",
+  "description": "HomePage for Sascha Metz",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r3Metz/smetzportfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Homepage",
+    "Sascha",
+    "Metz",
+    "Sascha",
+    "Metz"
+  ],
+  "author": "Sascha Metz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/r3Metz/smetzportfolio/issues"
+  },
+  "homepage": "https://github.com/r3Metz/smetzportfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.2"
+  }
+}
