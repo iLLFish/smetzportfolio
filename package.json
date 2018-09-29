@@ -4,7 +4,7 @@
   "description": "HomePage for Sascha Metz",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server | gulp watch"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/r3Metz/smetzportfolio#readme",
   "devDependencies": {
     "autoprefixer": "^9.1.5",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.10.0",
