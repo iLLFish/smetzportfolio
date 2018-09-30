@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/r3Metz/smetzportfolio#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.1.0",
     "autoprefixer": "^9.1.5",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
@@ -37,7 +38,8 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
-    "gulp-watch": "^5.0.1"
+    "gulp-watch": "^5.0.1",
+    "viewport-units-buggyfill": "^0.6.2"
   },
   "dependencies": {
     "@babel/core": "^7.1.2"

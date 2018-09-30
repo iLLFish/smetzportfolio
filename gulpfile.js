@@ -30,7 +30,7 @@ const paths = {
     scss: 'src/scss/**/*.scss',
     php: '**/*.php',
     scripts: ['src/js/*.js'],
-    plugins: ['node_modules/tiny-slider/dist/min/tiny-slider.js'],
+    plugins: ['node_modules/viewport-units-buggyfill/viewport-units-buggyfill.js'],
     css: []
 };
 
