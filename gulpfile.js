@@ -16,6 +16,9 @@ const livereload = require('gulp-livereload');
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
 const sourcemaps = require('gulp-sourcemaps');
+//Conditionals
+const argv = require('yargs').argv;
+const gulpif = require('gulp-if');
 
 
 const processors = [
@@ -36,10 +39,10 @@ const paths = {
 
 gulp.task('sass', () => {
     gulp.src('src/scss/main.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({ outputStyle: argv.production ? 'compressed' : 'expanded' }).on('error', sass.logError))
         .pipe(concat('styles.min.css'))
         .pipe(postcss(processors))
-        .pipe(cleanCss({ compatibility: 'ie8' }))
+        .pipe(gulpif(argv.production, cleanCss({ compatibility: 'ie8' })))
         .pipe(gulp.dest('assets/css'))
 });
 
@@ -48,7 +51,7 @@ gulp.task('compress', () => {
         .pipe(sourcemaps.init())
         .pipe(babel({ presets: ['@babel/env'] }))
         .pipe(concat('scripts.min.js'))
-        .pipe(uglify())
+        .pipe(gulpif(argv.production, uglify()))
         .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('assets/js'))
 });
