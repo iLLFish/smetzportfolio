@@ -4,7 +4,8 @@
   "description": "HomePage for Sascha Metz",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "live-server | gulp watch"
+    "start": "live-server | gulp watch",
+    "build": "npm install | gulp --production"
   },
   "repository": {
     "type": "git",
