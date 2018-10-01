@@ -1,4 +1,4 @@
 .htaccess
 .DS_Store
 node_modules/
-ARCHIVE/npm 
+ARCHIVE/ 
