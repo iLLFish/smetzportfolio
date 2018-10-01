@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "live-server | gulp watch",
-    "build": "npm install && gulp --production"
+    "build": "gulp --production"
   },
   "repository": {
     "type": "git",
