@@ -61,7 +61,7 @@ gulp.task('plugins', () => {
         // .pipe(sourcemaps.init())
         //.pipe(babel({presets: ['@babel/env']}))
         .pipe(concat('plugins.min.js'))
-        //.pipe(uglify())
+        .pipe(gulpif(argv.production, uglify()))
         // .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('assets/js'));
     gulp.src(paths.css)
