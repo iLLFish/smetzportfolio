@@ -47,6 +47,8 @@
     "gulp-watch": "^5.0.1",
     "postcss-flexbugs-fixes": "^4.1.0",
     "viewport-units-buggyfill": "^0.6.2",
-    "yargs": "^12.0.2"
+    "yargs": "^12.0.2",
+    "cryptiles": "~>4.1.2",
+    "hoek": "~>4.2.1"
   }
 }
