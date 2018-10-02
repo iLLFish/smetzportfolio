@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "live-server | gulp watch",
-    "build": "gulp --production"
+    "build": "gulp --production && gulp minifyhtml"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^2.0.2",
     "gulp-livereload": "^4.0.0",
     "gulp-postcss": "^8.0.0",

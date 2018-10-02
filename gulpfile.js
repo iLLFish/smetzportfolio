@@ -16,6 +16,8 @@ const livereload = require('gulp-livereload');
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
 const sourcemaps = require('gulp-sourcemaps');
+const htmlmin = require('gulp-htmlmin');
+
 //Conditionals
 const argv = require('yargs').argv;
 const gulpif = require('gulp-if');
@@ -36,6 +38,12 @@ const paths = {
     plugins: ['node_modules/viewport-units-buggyfill/viewport-units-buggyfill.js'],
     css: []
 };
+
+gulp.task('minifyhtml', () => {
+    return gulp.src('./*.html')
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('./'));
+})
 
 gulp.task('sass', () => {
     gulp.src('src/scss/main.scss')
