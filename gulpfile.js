@@ -45,6 +45,12 @@ gulp.task('minifyhtml', () => {
         .pipe(gulp.dest('./'));
 })
 
+gulp.task('bundle', () => {
+    return gulp.src('./bundle.config.js')
+        .pipe(bundle())
+        .pipe(gulp.dest('./assets/js'));
+});
+
 gulp.task('sass', () => {
     gulp.src('src/scss/main.scss')
         .pipe(sass({ outputStyle: argv.production ? 'compressed' : 'expanded' }).on('error', sass.logError))
